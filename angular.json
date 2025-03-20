@@ -130,7 +130,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://andrew-apexlogic.github.io/symphony-website/"
+          }
         }
       }
     }

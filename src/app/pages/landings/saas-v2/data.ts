@@ -38,7 +38,7 @@ export const benefitsProduct: BenefitProductType[] = [
       heading: 'Audition',
       paragraph:
         'Open Market solicitation, Proposal Configuration, Intake, and Source Selection',
-      image: '../assets/img/symphony/audition-icon.png'
+      image: 'assets/img/symphony/audition-icon.png'
 
     },
     card_flip_back: {
@@ -46,7 +46,7 @@ export const benefitsProduct: BenefitProductType[] = [
       paragraph:
         'Symphony Audition lets you customize proposal  criteria and streamlines the contract vehicle competition process through the automation of proposal validation and evaluation. Easily set up the program and solicitation requirements and receive and validate bidder proposals. ',
       color: 'bg-info',
-      image: '../assets/img/symphony/audition-icon.png'
+      image: 'assets/img/symphony/audition-icon.png'
     },
   },
 
@@ -55,14 +55,14 @@ export const benefitsProduct: BenefitProductType[] = [
       heading: 'Performer',
       paragraph:
         'Task Order and Contract Management, Operate and Measure Program Success',
-      image: '../assets/img/symphony/performer-icon.png'
+      image: 'assets/img/symphony/performer-icon.png'
     },
     card_flip_back: {
       heading: 'Performer',
       paragraph:
         'Symphony Performer standardizes and manages order placement and contract administration for complex acquisition programs. Symphony can be configured in days to meet the needs of the contract and was designed to withstand and adapt to an ever-changing environment.',
       color: 'bg-info',
-      image: '../assets/img/symphony/performer-icon.png'
+      image: 'assets/img/symphony/performer-icon.png'
     },
   },
 
@@ -71,14 +71,14 @@ export const benefitsProduct: BenefitProductType[] = [
       heading: 'Maestro',
       paragraph:
         'TODO:  product highlights here...',
-      image: '../assets/img/symphony/maestro-icon.png'
+      image: 'assets/img/symphony/maestro-icon.png'
     },
     card_flip_back: {
       heading: 'Maestro',
       paragraph:
         'TODO: Add small Maestro block here...',
       color: 'bg-info',
-      image: '../assets/img/symphony/maestro-icon.png'
+      image: 'assets/img/symphony/maestro-icon.png'
     },
   },
 ]
