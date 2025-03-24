@@ -20,7 +20,7 @@ import { StepsComponent } from './components/steps/steps.component'
     StepsComponent,
     TestimonialComponent,
     BenefitsComponent,
-    ToolsComponent,
+    // ToolsComponent,
     // ResourcesComponent,
     CtaComponent,
     // FooterComponent,

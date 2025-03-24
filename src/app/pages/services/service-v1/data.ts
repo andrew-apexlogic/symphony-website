@@ -30,40 +30,40 @@ export type ServiceTestimonialType = {
 
 export const serviceGrid: ServiceGridType[] = [
   {
-    title: 'Advertising communications',
+    title: 'Consultation and Reporting',
     icons: serviceIcon,
     description:
-      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint velit officia consequat duis enim velit mollit.',
+      'We guide our customers through the strategy and planning phases, applying best practices for acquisition criteria and workflows. Additionally, we can manage specific tasks within the program, such as Market Research and Scope Review. ',
   },
   {
-    title: 'Marketing and branding',
+    title: 'Custom Software Development',
     icons: serviceIcon2,
     description:
-      'Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur neque congue.',
+      'We specialize in developing a wide range of custom applications and automation to support all aspects of the procurement lifecycle. ',
   },
   {
-    title: 'Web and Internet marketing',
+    title: 'Advanced Help Desk',
     icons: serviceIcon3,
     description:
-      'Hac erat leo proin odio est sed sit felis facilisi integer sed congue neque turpis dictumst sit sed volutpat aliquet tortor non.',
+      'We’re known for our high-touch customer service, which is included with the standard license fee. For additional support, we offer extended hours, faster response times, and priority escalations when needed.',
   },
   {
-    title: 'Email marketing',
+    title: 'Additional Training',
     icons: serviceIcon4,
     description:
-      'Adipiscing posuere dui, amet, augue nisl dictum justo, enim. Sed neque congue non quam ultrices interdum vitae vestibulum.',
+      'In addition to our knowledge base and video resources, we offer customized training sessions, including webinars for the industry, targeted training for Program Officers and Evaluators, and in-depth sessions on managing program execution.',
   },
   {
-    title: 'Working on communication',
+    title: 'Integration and API Support',
     icons: serviceIcon5,
     description:
-      'Molestie enim tempus egestas a at enim. Velit hendrerit nibh eget porta pretium. Ipsum orci habitasse eget malesuada platea.',
+      'We can assist with integrating Symphony into other systems and enhance existing external dashboards and reports by incorporating data from Symphony.',
   },
   {
-    title: 'Business copywriting',
+    title: 'Symphony White Label',
     icons: serviceIcon6,
     description:
-      'Massa donec quam orci feugiat. Quis iaculis facilisi ornare aenean lorem enim purus in lacus in ullamcorper diam consequat.',
+      'The entire Symphony experience can be fully customized and branded to meet the unique needs of specific agencies and their clients.',
   },
 ]
 

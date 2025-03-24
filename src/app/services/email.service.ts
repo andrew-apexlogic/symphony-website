@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +30,7 @@ export class EmailService {
       source: 7, // Set source to API
     };
 
-    return this.http.post(this.apiUrl, ticketData, { headers });
+    // return this.http.post(this.apiUrl, ticketData, { headers });
+    return of(true);
   }
 }

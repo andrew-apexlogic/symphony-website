@@ -60,22 +60,25 @@ export class ContactV2FormComponent implements OnInit {
   }
 
   submitForm() {
-    this.formGroup = true;
-    // if (!this.contactForm.valid) return;
+    // this.formGroup = true;
+    console.log("CONTACT FORM 1: ", this.contactForm);
+    if (this.contactForm.valid) {
 
-    console.log("CONTACT FORM: " + this.contactForm);
+      console.log("CONTACT FORM 2: ", this.contactForm);
 
-    this.isSubmitting = true;
-    this.emailService.createTicket(this.contactForm.value).subscribe({
-      next: () => {
-        this.successMessage = 'Your request has been sent to Freshdesk!';
-        this.contactForm.reset();
-        this.isSubmitting = false;
-      },
-      error: (err) => {
-        console.error('Error sending request to Freshdesk:', err);
-        this.isSubmitting = false;
-      }
-    });
+      this.isSubmitting = true;
+      this.emailService.createTicket(this.contactForm.value).subscribe({
+        next: () => {
+          this.successMessage = 'Your request has been sent to Freshdesk!';
+          this.contactForm.reset();
+          this.isSubmitting = false;
+        },
+        error: (err) => {
+          console.error('Error sending request to Freshdesk:', err);
+          this.isSubmitting = false;
+        }
+      });
+      this.formGroup = false;
+    }
   }
 }

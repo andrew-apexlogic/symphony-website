@@ -17,7 +17,6 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     // FeaturesComponent,
     FeaturesListComponent,
     IndustriesComponent,
-    PricingComponent,
 
   ],
   templateUrl: './saas-v1.component.html',

@@ -9,6 +9,8 @@ import { ProductComponent } from './pages/about/product/product.component'
 import { List2Component } from './pages/portfolio/list-2/list-2.component'
 import { SaasV1Component } from './pages/landings/saas-v1/saas-v1.component'
 import { SaasV4Component } from './pages/landings/saas-v4/saas-v4.component'
+import { AboutComponent } from './pages/about/agency/component/about/about.component'
+import { AgencyComponent } from './pages/about/agency/agency.component'
 
 export const routes: Routes = [
   {
@@ -25,6 +27,11 @@ export const routes: Routes = [
     path: 'services',
     component: ServiceV1Component,
     title: 'Services | Symphony Procurement Suite - Apex Logic',
+  },
+  {
+    path: 'customers',
+    component: AgencyComponent,
+    title: 'Customers | Symphony Procurement Suite - Apex Logic',
   },
 
   {
@@ -54,6 +61,11 @@ export const routes: Routes = [
     path: 'performer-overview',
     component: SaasV4Component,
     title: 'Performer Overview | Symphony Procurement Suite - Apex Logic',
+  },
+  {
+    path: 'maestro-overview',
+    component: SaasV4Component,
+    title: 'Maestro Overview | Symphony Procurement Suite - Apex Logic',
   },
   // {
   //   path: 'landings',
