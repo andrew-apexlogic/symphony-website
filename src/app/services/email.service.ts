@@ -30,7 +30,6 @@ export class EmailService {
       source: 7, // Set source to API
     };
 
-    // return this.http.post(this.apiUrl, ticketData, { headers });
-    return of(true);
+    return this.http.post(this.apiUrl, ticketData, { headers });
   }
 }
