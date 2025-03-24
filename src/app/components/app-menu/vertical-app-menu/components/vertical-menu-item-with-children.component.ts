@@ -19,7 +19,7 @@ import { VerticalMenuItemComponent } from './vertical-menu-item.component'
         [class]="linkClassName + ' collapse-item'"
         data-bs-toggle="collapse"
         role="button"
-        href="javascript:void(0)"
+        href="{{item.url}}"
         [id]="item.key + '-menu-link'"
         aria-haspopup="true"
         [attr.aria-expanded]="!isCollapsed"

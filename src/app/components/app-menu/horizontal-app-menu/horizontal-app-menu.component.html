@@ -8,10 +8,11 @@
         <li class="nav-item dropdown">
           <a
             [ngClass]="[
-              'nav-link dropdown-toggle',
+              'nav-link ',
               activeMenuItems.includes(item.key) ? ' active' : ''
             ]"
-            href="javascript:void(0);"
+            href="{{item.href ? item.href : item.url}}"
+            target="item.href.includes('https://') ? '_blank' : '_self'" 
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
@@ -111,7 +112,7 @@
   <li class="{{ className }}">
     <a
       class="{{ linkClassName }}"
-      href="javascript:void(0);"
+      href="{{item.href ? item.href : item.url}}"
       data-bs-toggle="dropdown"
       data-bs-auto-close="outside"
       aria-expanded="false"

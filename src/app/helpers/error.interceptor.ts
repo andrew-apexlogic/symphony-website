@@ -13,19 +13,19 @@ import { AuthenticationEffects } from '@store/authentication/authentication.effe
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
-  constructor(public autheffect: AuthenticationEffects) {}
+  constructor(public autheffect: AuthenticationEffects, private authenticationService: AuthenticationService) {}
 
   intercept(
     request: HttpRequest<Request>,
     next: HttpHandler
   ): Observable<HttpEvent<Event>> {
-    const authenticationService = inject(AuthenticationService)
+    // const authenticationService = inject(AuthenticationService)
 
     return next.handle(request).pipe(
       catchError((err) => {
         if (err.status === 401) {
           // auto logout if 401 response returned from api
-          authenticationService.removeSession()
+          this.authenticationService.removeSession()
           window.location.reload()
         }
 

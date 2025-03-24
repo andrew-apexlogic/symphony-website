@@ -11,13 +11,14 @@ import { AuthenticationService } from '@core/services/auth.service'
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
+  constructor(private authenticationService: AuthenticationService){};
   intercept(
-    request: HttpRequest<Request>,
+    request: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<Event>> {
     // add authorization header with jwt token if available
-    const authenticationService = inject(AuthenticationService)
-    const token = authenticationService.session
+    // const authenticationService = inject(AuthenticationService)
+    const token = this.authenticationService.session
     if (token) {
       request = request.clone({
         setHeaders: {

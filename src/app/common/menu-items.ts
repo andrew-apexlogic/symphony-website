@@ -6,6 +6,7 @@ export type MenuItemType = {
   isMega?: boolean
   isNew?: boolean
   url?: string
+  href?: string;
   parentKey?: string
   target?: '_self' | '_blank' | '_parent' | '_top'
   children?: MenuItemType[]
@@ -19,28 +20,41 @@ export const MENU_ITEMS: MenuItemType[] = [
     url: '/symphony-overview',
     isTitle: true,
     isMega: true,
+    target: '_self',
     children: [
       {
         key: 'audition',
         label: 'Audition',
         url: '/audition-overview',
-        parentKey: 'landings',
+        parentKey: 'symphony',
         image: 'assets/img/megamenu/landings.jpg',
       },
       {
         key: 'performer',
         label: 'Performer',
         url: '/performer-overview',
-        parentKey: 'landings',
+        parentKey: 'symphony',
         image: 'assets/img/megamenu/landings.jpg',
       },
       {
         key: 'maestro',
         label: 'Maestro',
         url: '/maestro-overview',
-        parentKey: 'landings',
+        parentKey: 'symphony',
         image: 'assets/img/megamenu/landings.jpg',
       },
+      {
+        key: 'licensing',
+        label: 'Licensing',
+        url: '/licensing',
+        parentKey: 'symphony',
+      },
+      {
+        key: 'technical-specifications',
+        label: 'Technical Specifications',
+        url: '/technical-specs',
+        parentKey: 'symphony',
+      }
      
     ],
   },
@@ -65,6 +79,8 @@ export const MENU_ITEMS: MenuItemType[] = [
     key: 'about-us',
     label: 'About Us',
     isTitle: true,
+    // isMega: true,
+    target: '_self',
     children: [
       {
         key: 'mission',
@@ -85,38 +101,21 @@ export const MENU_ITEMS: MenuItemType[] = [
         url: '/who-we-are',
         parentKey: 'about-us',
       },
-      {
-        key: 'news',
-        label: 'News',
-        url: '/news',
-        parentKey: 'about-us',
-      },
+      // {
+      //   key: 'news',
+      //   label: 'News',
+      //   url: '/news',
+      //   parentKey: 'about-us',
+      // },
     ],
   },
   {
     key: 'support',
+    // url: 'https://apexlogic.freshdesk.com/support/home',
+    href: 'https://apexlogic.freshdesk.com/support/home',
     label: 'Support',
     isTitle: true,
-    children: [
-      {
-        key: 'customer-support',
-        label: 'Customer Support',
-        url: '/customer-support',
-        parentKey: 'support',
-      },
-     
-      {
-        key: 'licensing',
-        label: 'Licensing',
-        url: '/licensing',
-        parentKey: 'support',
-      },
-      {
-        key: 'technical-specifications',
-        label: 'Technical Specifications',
-        url: '/technical-specs',
-        parentKey: 'support',
-      }
-    ],
-  },
+    isMega: true,
+    target: '_self',
+  }
 ]

@@ -7,6 +7,7 @@ import {
   UntypedFormGroup,
   Validators,
 } from '@angular/forms'
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'contact-v2-form',
@@ -18,7 +19,11 @@ import {
 export class ContactV2FormComponent implements OnInit {
   contactForm!: UntypedFormGroup
   formGroup!: boolean
-  constructor(private fb: FormBuilder) {}
+
+  isSubmitting = false;
+  successMessage = '';
+
+  constructor(private fb: FormBuilder, private emailService: EmailService) { }
 
   ngOnInit(): void {
     this.setupFormValidation()
@@ -28,7 +33,6 @@ export class ContactV2FormComponent implements OnInit {
       email: ['', Validators.required, Validators.email],
       phone: ['', Validators.required],
       organization: ['', Validators.required],
-      // message: ['', Validators.required],
     })
   }
 
@@ -56,6 +60,22 @@ export class ContactV2FormComponent implements OnInit {
   }
 
   submitForm() {
-    this.formGroup = true
+    this.formGroup = true;
+    // if (!this.contactForm.valid) return;
+
+    console.log("CONTACT FORM: " + this.contactForm);
+
+    this.isSubmitting = true;
+    this.emailService.createTicket(this.contactForm.value).subscribe({
+      next: () => {
+        this.successMessage = 'Your request has been sent to Freshdesk!';
+        this.contactForm.reset();
+        this.isSubmitting = false;
+      },
+      error: (err) => {
+        console.error('Error sending request to Freshdesk:', err);
+        this.isSubmitting = false;
+      }
+    });
   }
 }

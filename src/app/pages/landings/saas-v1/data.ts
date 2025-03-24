@@ -67,9 +67,8 @@ export const swiperSlides: SwiperType[] = [
 export const saasFeature: SaasFeatureType[] = [
   {
     order: 1,
-    title: 'Target your audience effectively',
-    description:
-      'Nisl in enim, gravida risus enim risus non et in iaculis non facilisis eget blandit id vulputate morbi proin vitae tincidunt vestibulum viverra. Quis odio mauris velit egestas risus vulputate.',
+    title: 'Soliciting the Master Contract through Symphony - Proposal Intake Benefits ',
+    description: '<ul><li>Contractors can register with their SAM Unique Entity Identifier (UEI), enhancing accuracy for all.</li><li>Quick insights through dashboard and reporting.</li><li>Audition manages roles and system security for contractors, ensuring they have full control over their submissions.</li> <li>Audition validates proposal content on the offerors side to prevent incomplete submissions.</li> <li>Audition is configured to warn contractors if any of their submissions fail to meet the requirements, reducing the likelihood of protests.</li><li>Audition organizes the proposals so that the initial intake is complete at close.</li><li>Contractors can view their proposals being validated in real-time, along with their auto-calculated score, as they build their submissions.</li><li>Apex Logic provides offerors with consolidated Q&A, training, and help desk support up until the solicitation deadline.</li><li>Q&A, Submissions, Clarifications, and Evaluator data are all in one convenient location.</li></ul>',
   },
   {
     order: 3,

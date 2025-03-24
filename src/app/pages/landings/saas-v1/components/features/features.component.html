@@ -10,15 +10,15 @@
             class="text-center text-md-start pe-md-5 pb-3 pb-md-0 me-xxl-3 mb-4 md-0"
           >
             <h2 class="h1 text-white pb-2 pb-md-3 mb-lg-4">
-              How Does It Work?
+              Conception to Award
             </h2>
-            <a
+            <!-- <a
               class="btn btn-icon btn-xl btn-warning rounded-circle" (click)="open(0)"
               data-bs-toggle="video"
               aria-label="Play video"
             >
               <i class="ai-play-filled"></i>
-            </a>
+            </a> -->
           </div>
           <div class="w-100 flex-md-shrink-0 mx-auto" style="max-width: 472px">
             <img
@@ -40,9 +40,9 @@
         <div class="card border-0 bg-secondary h-100 py-lg-2 py-xl-4">
           <div class="card-body">
             <h3>{{ item.title }}</h3>
-            <p class="mb-0">
-              {{ item.description }}
-            </p>
+            <!-- <p class="mb-0"> -->
+              <div [innerHTML]="item.description"></div>
+            <!-- </p> -->
           </div>
         </div>
       </div>
