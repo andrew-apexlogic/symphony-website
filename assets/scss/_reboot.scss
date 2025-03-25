@@ -25,10 +25,10 @@ body {
 
 // Links
 a {
-  transition: $link-transition;
-  &:focus {
-    outline: none;
-  }
+  // transition: $link-transition;
+  // &:focus {
+  //   outline: none;
+  // }
 }
 
 // Background transition for links

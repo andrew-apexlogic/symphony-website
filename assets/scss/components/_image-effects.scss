@@ -37,12 +37,12 @@
 .card:hover > .swap-image,
 .card.card-active > .swap-image,
 .nav-link:hover > .swap-image,
-.nav-link.active > .swap-image {
-  .swap-from,
-  .swap-to { transition-duration: .2s; }
-  .swap-from { opacity: 0; }
-  .swap-to { opacity: 1; }
-}
+// .nav-link.active > .swap-image {
+//   .swap-from,
+//   .swap-to { transition-duration: .2s; }
+//   .swap-from { opacity: 0; }
+//   .swap-to { opacity: 1; }
+// }
 
 
 // Zoom image effect
