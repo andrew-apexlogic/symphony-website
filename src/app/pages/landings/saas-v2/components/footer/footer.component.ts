@@ -25,10 +25,10 @@ export class FooterComponent {
       linkName: 'Contact Us',
       path: 'contact'
     },
-    {
-      linkName: 'Careers',
-      path: 'careers'
-    },
+    // {
+    //   linkName: 'Careers',
+    //   path: 'careers'
+    // },
   ]
 
   supportLinks: FooterLink[] = [
@@ -36,18 +36,18 @@ export class FooterComponent {
       linkName: 'Customer Support',
       path: 'https://apexlogic.freshdesk.com/support/home'
     },
-    {
-      linkName: 'Licensing',
-      path: 'licensing'
-    },
+    // {
+    //   linkName: 'Licensing',
+    //   path: 'licensing'
+    // },
     {
       linkName: 'Technical Specifications',
       path: 'technical-specs'
     },
-    {
-      linkName: 'Privacy Policy',
-      path: 'privacy'
-    }
+    // {
+    //   linkName: 'Privacy Policy',
+    //   path: 'privacy'
+    // }
   ]
 
   onNavLinkClick(item: FooterLink) {
