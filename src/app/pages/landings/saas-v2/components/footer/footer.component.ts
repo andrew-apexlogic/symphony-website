@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
-import { RouterModule } from '@angular/router'
+import { Router, RouterModule } from '@angular/router'
+import { MenuItemType } from 'src/app/common/menu-items'
 import { createdBy, developedByLink } from 'src/app/states/constants'
 
 @Component({
@@ -13,29 +14,27 @@ export class FooterComponent {
   author = createdBy
   developBy = developedByLink
 
-  companyLinks: FooterLink[]  = [
+  constructor(private router: Router) { }
+
+  companyLinks: FooterLink[] = [
     {
-      linkName: 'Mission',
+      linkName: 'Who we are',
       path: 'mission'
+    },
+    {
+      linkName: 'Contact Us',
+      path: 'contact'
     },
     {
       linkName: 'Careers',
       path: 'careers'
-    },
-    {
-      linkName: 'Who we are',
-      path: 'who-we-are'
-    },
-    {
-      linkName: 'News',
-      path: 'news'
     },
   ]
 
   supportLinks: FooterLink[] = [
     {
       linkName: 'Customer Support',
-      path: 'customer-support'
+      path: 'https://apexlogic.freshdesk.com/support/home'
     },
     {
       linkName: 'Licensing',
@@ -50,7 +49,17 @@ export class FooterComponent {
       path: 'privacy'
     }
   ]
+
+  onNavLinkClick(item: FooterLink) {
+    if (item.path?.includes('https://')) {
+      window.open(item.path, '_blank');
+    } else {
+      this.router.navigate([item.path]);
+    }
+  }
 }
+
+
 
 export type FooterLink = {
   linkName: string

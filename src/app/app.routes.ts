@@ -12,6 +12,7 @@ import { SaasV4Component } from './pages/landings/saas-v4/saas-v4.component'
 import { AboutComponent } from './pages/about/agency/component/about/about.component'
 import { AgencyComponent } from './pages/about/agency/agency.component'
 import { SymMissionComponent } from './pages/about/mission/mission.component'
+import { MaestroComponent } from './pages/landings/maestro/maestro.component'
 
 
 export const routes: Routes = [
@@ -72,7 +73,7 @@ export const routes: Routes = [
   },
   {
     path: 'maestro-overview',
-    component: SaasV4Component,
+    component: MaestroComponent,
     title: 'Maestro Overview | Symphony Procurement Suite - Apex Logic',
   },
   // {

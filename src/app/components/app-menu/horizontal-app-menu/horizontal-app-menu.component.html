@@ -9,10 +9,10 @@
           <button
             [ngClass]="[
               'nav-link ',
-              activeMenuItems.includes(item.key) ? ' active' : ''
-            ]" 
+              activeMenuItems.includes(item.key) ? 'active' : ''
+            ]"
             (click)="onNavLinkClick(item)"
-           
+
             aria-expanded="false"
           >
             {{ item.label }}
