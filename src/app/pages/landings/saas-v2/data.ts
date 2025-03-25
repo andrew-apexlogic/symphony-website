@@ -76,13 +76,13 @@ export const benefitsProduct: BenefitProductType[] = [
     card_flip_front: {
       heading: 'Maestro',
       paragraph:
-        'TODO:  product highlights here...',
+        'Purposeful AI Designed for the Federal Acquisition Community.',
       image: 'assets/img/symphony/maestro-icon.png'
     },
     card_flip_back: {
       heading: 'Maestro',
       paragraph:
-        'TODO: Add small Maestro block here...',
+        'Maestro will soon be released in beta Symphony Maestro exemplifies Symphony’s application of AI.  Maestro will soon be released in beta',
       color: 'bg-info',
       image: 'assets/img/symphony/maestro-icon.png'
     },
@@ -110,7 +110,6 @@ export const allCustomerAgency: CustomerAgencyType[] = [
     image_src: 'assets/img/symphony/customers/hhs-logo-grey.png',
     width: 110,
   },
-  
   {
     name: 'ED',
     image_src: 'assets/img/symphony/customers/ed-logo-grey.png',

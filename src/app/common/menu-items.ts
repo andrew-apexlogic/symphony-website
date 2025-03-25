@@ -27,28 +27,28 @@ export const MENU_ITEMS: MenuItemType[] = [
         label: 'Audition',
         url: 'audition-overview',
         parentKey: 'symphony',
-        image: 'assets/img/megamenu/landings.jpg',
+        image: 'assets/img/megamenu/audition-landing.jpg',
       },
       {
         key: 'performer',
         label: 'Performer',
         url: 'performer-overview',
         parentKey: 'symphony',
-        image: 'assets/img/megamenu/landings.jpg',
+        // image: 'assets/img/megamenu/landings.jpg',
       },
       {
         key: 'maestro',
         label: 'Maestro',
         url: 'maestro-overview',
         parentKey: 'symphony',
-        image: 'assets/img/megamenu/landings.jpg',
+        // image: 'assets/img/megamenu/landings.jpg',
       },
-      {
-        key: 'licensing',
-        label: 'Licensing',
-        url: 'licensing',
-        parentKey: 'symphony',
-      },
+      // {
+      //   key: 'licensing',
+      //   label: 'Licensing',
+      //   url: 'licensing',
+      //   parentKey: 'symphony',
+      // },
       {
         key: 'technical-specifications',
         label: 'Technical Specifications',
@@ -95,12 +95,12 @@ export const MENU_ITEMS: MenuItemType[] = [
         parentKey: 'about-us',
       },
      
-      {
-        key: 'careers',
-        label: 'Careers',
-        url: 'careers',
-        parentKey: 'about-us',
-      }
+      // {
+      //   key: 'careers',
+      //   label: 'Careers',
+      //   url: 'careers',
+      //   parentKey: 'about-us',
+      // }
     ],
   },
   {

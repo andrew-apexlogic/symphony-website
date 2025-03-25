@@ -22,7 +22,7 @@ export type Saas3FeatureType = {
 }
 
 export type SaasV3TestimonialType = {
-  image_src: string
+  image_src?: string
   name: string
   quote: string
 }[][]
@@ -85,84 +85,52 @@ export const tools: ToolsType[] = [
 
 export const saas3feature: Saas3FeatureType[] = [
   {
-    title: 'Comments on tasks',
+    title: 'Program Management',
     description:
-      'Id mollis consectetur congue egestas egestas suspendisse blandit in the justo eget maximus accumsan lorem ligula malesuada.',
+      'Symphony streamlines contract administration by centralizing key information, activities, and communication. Symphony workflows deliver a consistent, fair, and positive experience for the Industry while providing program management for government agencies.  Symphony efficiently manages all contract vehicles within a single system, allowing vendors to enter pertinent data once for use throughout the review and approval process across all contracts.',
     svg: comment,
   },
   {
-    title: 'Tasks analytics',
+    title: 'Contract Intelligence',
     description:
-      'Non imperdiet facilisis nulla tellus morbi scelerisque eget adipiscing out vulputate convallis justo sed tellus vehicula.',
+      'Symphony provides insight into post-award programmatic functions, enhancing transparency, shifting accountability to the industry, improving the customer ordering experience, reducing the governments risk regarding fair opportunity, and minimizing personnel resource allocation and workload.',
     svg: analytics,
   },
   {
-    title: 'Light / dark mode',
+    title: 'Integrations',
     description:
-      'A elementum, imperdiet enim, pretium etiam facilisi in aenean quam inrean mauris ultrices interdum congue ut, dictum et tortor.',
+      'Symphonys API-first design allows all user actions to trigger RESTful API calls, enabling seamless integration with external systems. This streamlines the contracting process by automatically generating, posting, and releasing orders in Symphony based on data and documents from third-party systems, without requiring direct user interaction with the Symphony interface. Additionally, existing external dashboards and reports can be enhanced by integrating data from Symphony.',
     svg: mode,
   },
   {
-    title: 'Notifications',
+    title: 'AI',
     description:
-      'Diam, suspendisse velitcras ac. Lobortis diam volutpat, eget pellentesque viverra inter vivamus id porta fermentum turpis.',
+      'Apex Logic has adopted a thoughtful approach, taking the time to identify best practices emerging from the rapid evolution of AI technologies. Our AI-powered contract management system are designed to reduce manual effort, minimize errors, improve compliance, and provide deeper insights into contractual relationships and obligations.',
     svg: notification,
-  },
-  {
-    title: 'Sections & subtasks',
-    description:
-      'Mi feugiat hac id in. Sit elit placerat lacus nibh lorem ridiculus lectus porttitor tincidunt sapien luctus tristique quam aenean accumsan.',
-    svg: subTasks,
-  },
-  {
-    title: 'Data security',
-    description:
-      'Aliquam malesuada neque eget elit nulla vestibulum nunc cras. Neque, morbi non arcu sapien luctus ullamcorper lectus efficitur.',
-    svg: security,
-  },
+  }
 ]
 
 export const saasv3Testimonial: SaasV3TestimonialType = [
   [
     {
-      image_src: 'assets/img/avatar/44.jpg',
-      name: 'Nadia Miles',
+      // image_src: 'assets/img/avatar/44.jpg',
+      name: 'Buyers',
       quote:
-        'Netus vel, amet placerat eget sit eleifend. Urna laoreet ultricies orci feugiat amet egestas semper praesent. Risus ut porttitor metus tortor quis eleifend.',
+        'A centralized hub for buyers to streamline market research, simplify the ordering process, and enhance order management.',
     },
     {
-      image_src: 'assets/img/avatar/45.jpg',
-      name: 'Eleanor Pena',
+      // image_src: 'assets/img/avatar/45.jpg',
+      name: 'Industry',
       quote:
-        'Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet. Mauris duis eleifend faucibus amet sagittis amet consequat aucibus cursus.',
+        'A central entry point for Industry to submit high quality proposals, store historical contracting documents, respond to new task order requests, view their performance metrics against a specific contract, manage contract requirements, submit requests for modifications, and provide additional market research information.',
     },
     {
-      image_src: 'assets/img/avatar/46.jpg',
-      name: 'Ralph Edwards',
+      // image_src: 'assets/img/avatar/46.jpg',
+      name: 'Program Office Managers',
       quote:
-        'Morbi ut aliquam etiam luctus feugiat ultrices. Amet pellentesque sagittis, consequat id egestas tristique turpis. Arcu odio ultricies blandit eu neque.',
+        'A clear entry point for each program to release their master contract RFP, perform source selection, reduce protests, and make awards.  Upon award, to manage their contract vehicles, review contract operations, and upper management to see the data across all contract vehicles in their agency.',
     },
-  ],
-  [
-    {
-      image_src: 'assets/img/avatar/47.jpg',
-      name: 'Albert Flores',
-      quote:
-        'Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet. Mauris duis eleifend faucibus amet sagittis amet consequat aucibus cursus.',
-    },
-    {
-      image_src: 'assets/img/avatar/48.jpg',
-      name: 'Jenny Wilson',
-      quote:
-        'Morbi ut aliquam etiam luctus feugiat ultrices. Amet pellentesque sagittis, consequat id egestas tristique turpis. Arcu odio ultricies blandit eu neque.',
-    },
-    {
-      image_src: 'assets/img/avatar/49.jpg',
-      name: 'Esther Howard',
-      quote:
-        'Netus vel, amet placerat eget sit eleifend. Urna laoreet ultricies orci feugiat amet egestas semper praesent. Risus ut porttitor metus tortor quis eleifend.',
-    },
-  ],
+  ]
 ]
 
 export const saas3Layer: Saa3LayersType[] = [
