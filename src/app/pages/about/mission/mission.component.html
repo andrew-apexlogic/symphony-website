@@ -1,0 +1,60 @@
+<main class="page-wrapper">
+  <div class="container position-relative z-2 pt-4 pt-sm-5 mt-2 mt-sm-0 mt-md-2 mt-lg-3 mt-xl-4 mt-xxl-5">
+    <div class="row justify-content-center py-4 mb-4">
+      <div class="col-lg-11 col-xl-10 text-center pb-2 pb-sm-3 mb-lg-2 mb-xl-3">
+        <h1 class="display-4 fw-normal mb-0 mt-5">
+          Our Mission
+        </h1>
+
+        <p class=" text-center  text-body pb-2 m-3">
+          Our mission is to develop software and provide exceptional services that alleviate the pressure on
+          overburdened federal procurement and program officers while minimizing headaches for industry partners. By
+          streamlining these processes, we bring a sense of calm to what can often feel like chaos, because we know our
+          approach to the contract lifecycle delivers results. And our support doesn’t stop at the award. The Symphony
+          suite continues to simplify workflows, manage deliverables, and save time for everyone involved, whether they
+          are part of a government agency or an industry partner.
+        </p>
+
+
+      </div>
+    </div>
+
+    <h1 class="display-4 text-center fw-normal mb-0 mt-5">
+      Core Values
+    </h1>
+
+    <div class="row row-cols- row-cols-sm-2 g-4 pb-sm-3 pb-md-4 pb-xl-5 pt-5">
+      @for (item of allCoreValueData; track $index) {
+      <div class="col">
+        <div class="card card-hover-primary bg-secondary border-0 h-100 text-decoration-none">
+          <div class="card-body pb-0">
+            <div [innerHTML]="item.sanitizedIcon"></div>
+            <h3 class="h4 card-title mt-0">{{ item.title }}</h3>
+            <p class="card-text">{{ item.description }}</p>
+          </div>
+          <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+            <!-- <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+              <i class="ai-arrow-right"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div class="text-center pb-2 pb-sm-3  mb-5">
+      <h1 class="display-4 fw-normal mb-0 mt-5">
+        It’s an Ambitious Vision.
+      </h1>
+
+      <h4 class=" text-center  text-body pb-2 m-3">
+        To make government work more intelligently, more efficiently, and more transparently by streamlining the process
+        of government procurement contract management.
+      </h4>
+
+
+    </div>
+  </div>
+
+
+</main>

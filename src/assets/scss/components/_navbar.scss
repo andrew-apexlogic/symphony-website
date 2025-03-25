@@ -206,7 +206,7 @@
           @include border-radius(var(--#{$prefix}dropdown-border-radius));
           box-shadow: var(--#{$prefix}dropdown-box-shadow) !important; // stylelint-disable-line declaration-no-important
         }
-        .dropdown-menu.show { display: none; }
+        .dropdown-menu.show { }
         .dropdown {
           &::before {
             position: absolute;
@@ -214,7 +214,7 @@
             left: 0;
             width: 100%;
             height: $dropdown-spacer + .125rem;
-            content: "";
+            // content: "";
           }
           &:hover > .dropdown-menu {
             display: block;
@@ -288,7 +288,7 @@
       // color: red;
     }
     &.active > .nav-link:not(.disabled) {
-      color: var(--#{$prefix}navbar-active-color);
+      color: #3f7fca;
     }
   }
   .dropdown:hover > .nav-link {

@@ -17,7 +17,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   {
     key: 'symphony',
     label: 'Symphony',
-    url: '/symphony-overview',
+    url: 'symphony-overview',
     isTitle: true,
     isMega: true,
     target: '_self',
@@ -25,34 +25,34 @@ export const MENU_ITEMS: MenuItemType[] = [
       {
         key: 'audition',
         label: 'Audition',
-        url: '/audition-overview',
+        url: 'audition-overview',
         parentKey: 'symphony',
         image: 'assets/img/megamenu/landings.jpg',
       },
       {
         key: 'performer',
         label: 'Performer',
-        url: '/performer-overview',
+        url: 'performer-overview',
         parentKey: 'symphony',
         image: 'assets/img/megamenu/landings.jpg',
       },
       {
         key: 'maestro',
         label: 'Maestro',
-        url: '/maestro-overview',
+        url: 'maestro-overview',
         parentKey: 'symphony',
         image: 'assets/img/megamenu/landings.jpg',
       },
       {
         key: 'licensing',
         label: 'Licensing',
-        url: '/licensing',
+        url: 'licensing',
         parentKey: 'symphony',
       },
       {
         key: 'technical-specifications',
         label: 'Technical Specifications',
-        url: '/technical-specs',
+        url: 'technical-specs',
         parentKey: 'symphony',
       }
      
@@ -60,7 +60,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   },
   {
     key: 'customers',
-    url: '/customers',
+    url: 'customers',
     label: 'Customers',
     isTitle: true,
     isMega: true,
@@ -68,7 +68,7 @@ export const MENU_ITEMS: MenuItemType[] = [
   },
   {
     key: 'services',
-    url: '/services',
+    url: 'services',
     label: 'Services',
     isTitle: true,
     isMega: true,
@@ -83,35 +83,29 @@ export const MENU_ITEMS: MenuItemType[] = [
     target: '_self',
     children: [
       {
-        key: 'mission',
-        label: 'Mission',
-        url: '/mission',
+        key: 'who-we-are',
+        label: 'Who we are',
+        url: 'mission',
+        parentKey: 'about-us',
+      },
+      {
+        key: 'contact-us',
+        label: 'Contact Us',
+        url: 'contact',
         parentKey: 'about-us',
       },
      
       {
         key: 'careers',
         label: 'Careers',
-        url: '/careers',
+        url: 'careers',
         parentKey: 'about-us',
-      },
-      {
-        key: 'who-we-are',
-        label: 'Who we are',
-        url: '/who-we-are',
-        parentKey: 'about-us',
-      },
-      // {
-      //   key: 'news',
-      //   label: 'News',
-      //   url: '/news',
-      //   parentKey: 'about-us',
-      // },
+      }
     ],
   },
   {
     key: 'support',
-    // url: 'https://apexlogic.freshdesk.com/support/home',
+    url: 'https://apexlogic.freshdesk.com/support/home',
     href: 'https://apexlogic.freshdesk.com/support/home',
     label: 'Support',
     isTitle: true,

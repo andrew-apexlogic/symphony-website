@@ -11,6 +11,8 @@ import { SaasV1Component } from './pages/landings/saas-v1/saas-v1.component'
 import { SaasV4Component } from './pages/landings/saas-v4/saas-v4.component'
 import { AboutComponent } from './pages/about/agency/component/about/about.component'
 import { AgencyComponent } from './pages/about/agency/agency.component'
+import { SymMissionComponent } from './pages/about/mission/mission.component'
+
 
 export const routes: Routes = [
   {
@@ -23,6 +25,12 @@ export const routes: Routes = [
     component: ContactV1Component,
     title: 'Contact | Symphony Procurement Suite - Apex Logic',
   },
+  {
+    path: 'mission',
+    component: SymMissionComponent,
+    title: 'Mission | Symphony Procurement Suite - Apex Logic',
+  },
+
   {
     path: 'services',
     component: ServiceV1Component,

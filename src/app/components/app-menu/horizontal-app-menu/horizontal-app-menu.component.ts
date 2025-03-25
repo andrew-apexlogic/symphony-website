@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
-import { RouterModule } from '@angular/router'
+import { Router, RouterModule } from '@angular/router'
 import { splitArray } from 'src/app/utils/array'
 import { findAllParent, getMenuItemFromURL, getMenuItems } from '@helpers/menu'
 import { MenuItemType } from 'src/app/common/menu-items'
@@ -23,19 +23,32 @@ export class HorizontalAppMenu {
     10
   )
 
-    trimmedURL = location?.pathname?.replaceAll(
-      basePath !== '' ? basePath + '/' : '',
-      '/'
-    )
+  trimmedURL = location?.pathname?.replaceAll(
+    basePath !== '' ? basePath + '/' : '',
+    '/'
+  )
   matchingMenuItem = getMenuItemFromURL(this.menuItems, this.trimmedURL)
 
   activeMenuItems: string[] = []
-
+  constructor( private router: Router){ }
   ngOnInit() {
-    if (this.matchingMenuItem) {
-      this.activeMenuItems = [
-        ...findAllParent(this.menuItems, this.matchingMenuItem),
-      ]
-    }
+    // if (this.matchingMenuItem) {
+    //   this.activeMenuItems = [
+    //     ...findAllParent(this.menuItems, this.matchingMenuItem),
+    //   ]
+    // }
   }
+
+
+  onNavLinkClick(item: MenuItemType) {
+    
+    if (item.url?.includes('https://')){
+      window.open(item.url, "_blank");
+    } else {
+      this.router.navigate(['/' + item.url]);
+    }
+
+
+  }
+
 }

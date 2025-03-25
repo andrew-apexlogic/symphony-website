@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router'
 
   styles: `
     .dropdown-toggle::after {
-      display: none;
+      // display: none;
     }
     .dropdown-toggle {
       align-items: unset !important;

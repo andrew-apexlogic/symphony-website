@@ -9,11 +9,7 @@ import { FooterComponent } from './component/footer/footer.component'
   selector: 'app-contact-v1',
   standalone: true,
   imports: [
-    NavigationBarComponent,
-    Breadcrumb1Component,
     PageTitleComponent,
-    ContactFormComponent,
-    FooterComponent,
   ],
   templateUrl: './contact-v1.component.html',
   styles: ``,

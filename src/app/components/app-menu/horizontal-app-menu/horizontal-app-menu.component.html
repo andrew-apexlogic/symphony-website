@@ -6,18 +6,17 @@
     @for (item of megaMenuItems; track item.key) {
       @if (item.isTitle) {
         <li class="nav-item dropdown">
-          <a
+          <button
             [ngClass]="[
               'nav-link ',
               activeMenuItems.includes(item.key) ? ' active' : ''
-            ]"
-            href="{{item.href ? item.href : item.url}}"
-            target="item.href.includes('https://') ? '_blank' : '_self'" 
-            data-bs-toggle="dropdown"
+            ]" 
+            (click)="onNavLinkClick(item)"
+           
             aria-expanded="false"
           >
             {{ item.label }}
-          </a>
+        </button>
 
           @if (item.children) {
             <div class="dropdown-menu overflow-hidden p-0">
@@ -110,13 +109,10 @@
   let-childLinkClassName="childLinkClassName"
 >
   <li class="{{ className }}">
-    <a
+    <button
       class="{{ linkClassName }}"
-      href="{{item.href ? item.href : item.url}}"
-      data-bs-toggle="dropdown"
-      data-bs-auto-close="outside"
-      aria-expanded="false"
-      >{{ item.label }}</a
+      (click)="onNavLinkClick(item)"
+      >{{ item.label }}</button
     >
     <ul class="dropdown-menu">
       @for (child of item.children; track child.key) {

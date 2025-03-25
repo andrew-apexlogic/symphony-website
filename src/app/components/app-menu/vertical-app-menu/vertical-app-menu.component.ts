@@ -39,6 +39,6 @@ export class VerticalAppMenuComponent {
   }
 
   getActiveClass(item: MenuItemType) {
-    return this.activeMenuItems?.includes(item.key) ? ' show' : ''
+    // return this.activeMenuItems?.includes(item.key) ? ' show' : ''
   }
 }
