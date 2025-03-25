@@ -139,11 +139,11 @@ export const saas3Layer: Saa3LayersType[] = [
     lightSrc: 'assets/img/landing/saas-3/hero/01-light.png',
     darkSrc: 'assets/img/landing/saas-3/hero/01-dark.png',
   },
-  {
-    depth: 0.25,
-    lightSrc: 'assets/img/landing/saas-3/hero/02-light.png',
-    darkSrc: 'assets/img/landing/saas-3/hero/02-dark.png',
-  },
+  // {
+  //   depth: 0.25,
+  //   lightSrc: 'assets/img/landing/saas-3/hero/02-light.png',
+  //   darkSrc: 'assets/img/landing/saas-3/hero/02-dark.png',
+  // },
   {
     depth: 0.35,
     lightSrc: 'assets/img/landing/saas-3/hero/03-light.png',

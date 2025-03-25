@@ -11,7 +11,9 @@
                   {{ item.quote }}
                 </p>
                 <div class="d-flex align-items-center">
-                  <img class="rounded-circle" src="{{ item.author.avatar }}" width="60" alt="Jenny Wilson" />
+                 @if (item.author.avatar){
+                    <img class="rounded-circle" src="{{ item.author.avatar }}" width="60" alt="Jenny Wilson" />
+                 }
                   <div class="ps-3">
                     <h3 class="h4 mb-0">{{ item.author.name }}</h3>
                     <div class="fs-lg text-body-secondary">

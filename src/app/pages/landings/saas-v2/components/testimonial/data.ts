@@ -3,7 +3,7 @@ export type TestimonialType = {
   author: {
     name: string
     role: string
-    avatar: string
+    avatar: string | null
   }
 }
 
@@ -33,7 +33,7 @@ export const testimonials: TestimonialType[] = [
     author: {
       name: 'Industry Offeror',
       role: 'GPO',
-      avatar: 'assets/img/avatar/31.jpg',
+      avatar: null,
     },
   },
   {
