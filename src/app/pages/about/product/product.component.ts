@@ -9,7 +9,7 @@ import { ContactV2FormComponent } from '../../contacts/contact-v2/component/cont
   standalone: true,
   imports: [
     HeroComponent,
-    ClientComponent,
+    // ClientComponent,
     ContactV2FormComponent,
   ],
   templateUrl: './product.component.html',

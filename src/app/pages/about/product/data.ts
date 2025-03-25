@@ -32,8 +32,9 @@ export type ParallaxImageType = {
 
 export type ClientProductDataType = {
   brand: string
-  swapTo: string
-  swapFrom: {
+  img: string;
+  swapTo?: string
+  swapFrom?: {
     darkMode: string
     lightmode: string
   }
@@ -98,53 +99,25 @@ export const benefitsProduct: BenefitProductType[] = [
 
 export const clientProductData: ClientProductDataType[] = [
   {
-    brand: 'Foster',
-    swapTo: 'assets/img/landing/saas-1/brands/foster-color.svg',
-    swapFrom: {
-      darkMode: 'assets/img/landing/saas-1/brands/foster-gray.svg',
-      lightmode: 'assets/img/landing/saas-1/brands/foster-light.svg',
-    },
+    brand: 'GSA',
+    img: 'assets/img/symphony/customers/gsa-logo-grey.png',
   },
   {
-    brand: 'Klinos',
-    swapTo: 'assets/img/landing/saas-1/brands/klinos-color.svg',
-    swapFrom: {
-      darkMode: 'assets/img/landing/saas-1/brands/klinos-gray.svg',
-      lightmode: 'assets/img/landing/saas-1/brands/klinos-light.svg',
-    },
+    brand: 'DHA',
+    img: 'assets/img/symphony/customers/dha-logo-grey.png',
   },
   {
-    brand: 'Champion',
-    swapTo: 'assets/img/landing/saas-1/brands/champion-color.svg',
-    swapFrom: {
-      darkMode: 'assets/img/landing/saas-1/brands/champion-gray.svg',
-      lightmode: 'assets/img/landing/saas-1/brands/champion-light.svg',
-    },
+    brand: 'NIH',
+    img: 'assets/img/symphony/customers/nih-logo-grey.png',
   },
   {
-    brand: 'Airbnb',
-    swapTo: 'assets/img/landing/saas-1/brands/airbnb-color.svg',
-    swapFrom: {
-      darkMode: 'assets/img/landing/saas-1/brands/airbnb-gray.svg',
-      lightmode: 'assets/img/landing/saas-1/brands/airbnb-light.svg',
-    },
+    brand: 'HHS',
+    img: 'assets/img/symphony/customers/hhs-logo-grey.png',
   },
   {
-    brand: 'Starcraft',
-    swapTo: 'assets/img/landing/saas-1/brands/starcraft-color.svg',
-    swapFrom: {
-      darkMode: 'assets/img/landing/saas-1/brands/starcraft-gray.svg',
-      lightmode: 'assets/img/landing/saas-1/brands/starcraft-light.svg',
-    },
-  },
-  {
-    brand: 'Alpine',
-    swapTo: 'assets/img/landing/saas-1/brands/alpine-color.svg',
-    swapFrom: {
-      darkMode: 'assets/img/landing/saas-1/brands/alpine-gray.svg',
-      lightmode: 'assets/img/landing/saas-1/brands/alpine-light.svg',
-    },
-  },
+    brand: 'ED',
+    img: 'assets/img/symphony/customers/ed-logo-grey.png',
+  }
 ]
 
 export const parallaxImage: ParallaxImageType[] = [
