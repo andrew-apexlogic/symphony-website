@@ -510,7 +510,7 @@ $nav-link-padding-y:                        .725rem !default;
 $nav-link-padding-x:                        1.75rem !default;
 $nav-link-font-weight:                      $font-weight-medium !default;
 $nav-link-color:                            var(--#{$prefix}gray-800) !default;
-$nav-link-hover-color:                      var(--#{$prefix}primary) !default;
+$nav-link-hover-color:                      var(--#{$prefix}gray-800) !default;
 $nav-link-active-color:                     var(--#{$prefix}primary) !default;
 $nav-link-disabled-color:                   var(--#{$prefix}gray-600) !default;
 $nav-link-transition:                       color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out !default;
@@ -573,7 +573,7 @@ $navbar-light-brand-hover-color:            var(--#{$prefix}gray-800) !default;
 
 // Navbar dark
 $navbar-dark-color:                         rgba($white, .9) !default;
-$navbar-dark-hover-color:                   var(--#{$prefix}primary) !default;
+$navbar-dark-hover-color:                   var(--#{$prefix}gray-800) !default;
 $navbar-dark-active-color:                  var(--#{$prefix}primary) !default;
 $navbar-dark-disabled-color:                rgba($white, .5) !default;
 $navbar-dark-toggler-border-color:          transparent !default;

@@ -41,14 +41,12 @@ export class HorizontalAppMenu {
 
 
   onNavLinkClick(item: MenuItemType) {
-    
+
     if (item.url?.includes('https://')){
       window.open(item.url, "_blank");
     } else {
       this.router.navigate(['/' + item.url]);
     }
-
-
   }
 
 }

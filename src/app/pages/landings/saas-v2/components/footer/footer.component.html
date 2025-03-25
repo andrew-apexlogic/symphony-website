@@ -22,7 +22,7 @@
             <ul class="nav flex-column">
               @for (item of companyLinks; track $index) {
               <li>
-                <a class="nav-link fw-normal py-1 px-0" routerLink="{{item.path}}">{{ item.linkName }}</a>
+                <button class="nav-link fw-normal py-1 px-0 text-left" (click)="onNavLinkClick(item)">{{ item.linkName }}</button>
               </li>
               }
             </ul>
@@ -32,7 +32,7 @@
             <ul class="nav flex-column">
               @for (item of supportLinks; track $index) {
               <li>
-                <a class="nav-link fw-normal py-1 px-0" routerLink="{{item.path}}">{{ item.linkName }}</a>
+                <button class="nav-link fw-normal py-1 px-0 text-left" (click)="onNavLinkClick(item)">{{ item.linkName }}</button>
               </li>
               }
             </ul>

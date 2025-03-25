@@ -19,23 +19,23 @@
   background: none;
   border: 0;
 
-  // [class^="opacity-"],
-  // [class*=" opacity-"] {
-  //   transition: opacity .2s ease-in-out;
-  // }
+  [class^="opacity-"],
+  [class*=" opacity-"] {
+    transition: opacity .2s ease-in-out;
+  }
 
-  // &:hover *,
-  // &.active * {
-  //   opacity: 1 !important; // stylelint-disable-line declaration-no-important
-  // }
+  &:hover *,
+  &.active * {
+    opacity: 1 !important; // stylelint-disable-line declaration-no-important
+  }
 
-  // &.active {
-  //   color: var(--#{$prefix}nav-link-active-color);
-  // }
-  // &.active:not([data-bs-toggle="dropdown"]) {
-  //   pointer-events: none;
-  //   cursor: default;
-  // }
+  &.active {
+    color: var(--#{$prefix}nav-link-active-color);
+  }
+  &.active:not([data-bs-toggle="dropdown"]) {
+    pointer-events: none;
+    cursor: default;
+  }
 
   &.text-body-secondary:hover,
   &.text-body-secondary:active {
