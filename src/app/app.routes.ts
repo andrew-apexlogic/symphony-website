@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/agency/component/about/about.compo
 import { AgencyComponent } from './pages/about/agency/agency.component'
 import { SymMissionComponent } from './pages/about/mission/mission.component'
 import { MaestroComponent } from './pages/landings/maestro/maestro.component'
+import { SaasV3Component } from './pages/landings/saas-v3/saas-v3.component'
 
 
 export const routes: Routes = [
@@ -30,6 +31,11 @@ export const routes: Routes = [
     path: 'mission',
     component: SymMissionComponent,
     title: 'Mission | Symphony Procurement Suite - Apex Logic',
+  },
+  {
+    path: 'careers',
+    component: SymMissionComponent,
+    title: 'Careers | Symphony Procurement Suite - Apex Logic',
   },
 
   {
@@ -59,6 +65,12 @@ export const routes: Routes = [
     path: 'technical-specs',
     component: List2Component,
     title: 'Technical Specs | Symphony Procurement Suite - Apex Logic',
+  },
+
+  {
+    path: 'symphony-overview',
+    component: SaasV3Component,
+    title: 'Symphony Platform | Symphony Procurement Suite - Apex Logic',
   },
 
   {
