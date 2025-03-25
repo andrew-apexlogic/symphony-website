@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { BrandType, brandName } from '../../data'
+import { BrandType, CustomerAgencyType, allCustomerAgency, brandName } from '../../data'
 import { ParallaxMouseMoveDirective } from '@core/services/parralax-directive'
 
 @Component({
@@ -11,6 +11,7 @@ import { ParallaxMouseMoveDirective } from '@core/services/parralax-directive'
 })
 export class HeroComponent {
   allBrandName: BrandType[] = brandName
+  allCustomerAgencies: CustomerAgencyType[] = allCustomerAgency
   list = [
     'Segmenting the audience is easy and simple',
     'Functional dashboard for managing your data',

@@ -24,7 +24,7 @@ export const testimonials: TestimonialType[] = [
     author: {
       name: 'Ronald, COR',
       role: 'HHS',
-      avatar: 'assets/img/avatar/30.jpg',
+      avatar: 'assets/img/symphony/customers/hhs-logo.svg',
     },
   },
   {
@@ -42,7 +42,7 @@ export const testimonials: TestimonialType[] = [
     author: {
       name: 'Michael, CS',
       role: 'GSA',
-      avatar: 'assets/img/avatar/32.jpg',
+      avatar: 'assets/img/symphony/customers/gsa-logo.svg',
     },
   },
   {
@@ -51,7 +51,7 @@ export const testimonials: TestimonialType[] = [
     author: {
       name: 'Sharmaine, CO',
       role: 'NIH',
-      avatar: 'assets/img/avatar/32.jpg',
+      avatar: 'assets/img/symphony/customers/nih-logo.png',
     },
   },
 ]

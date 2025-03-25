@@ -32,6 +32,12 @@ export type BrandType = {
   width: number
 }
 
+export type CustomerAgencyType = {
+  name: string
+  image_src: string
+  width: number
+}
+
 export const benefitsProduct: BenefitProductType[] = [
   {
     card_flip_front: {
@@ -83,6 +89,34 @@ export const benefitsProduct: BenefitProductType[] = [
   },
 ]
 
+export const allCustomerAgency: CustomerAgencyType[] = [
+  {
+    name: 'GSA',
+    image_src: 'assets/img/symphony/customers/gsa-logo-grey.png',
+    width: 100,
+  },
+  {
+    name: 'DHA',
+    image_src: 'assets/img/symphony/customers/dha-logo-grey.png',
+    width: 125,
+  },
+  {
+    name: 'NIH',
+    image_src: 'assets/img/symphony/customers/nih-logo-grey.png',
+    width: 110,
+  },
+  {
+    name: 'HHS',
+    image_src: 'assets/img/symphony/customers/hhs-logo-grey.png',
+    width: 110,
+  },
+  
+  {
+    name: 'ED',
+    image_src: 'assets/img/symphony/customers/ed-logo-grey.png',
+    width: 110,
+  },
+]
 export const brandName: BrandType[] = [
   {
     name: 'DHA',

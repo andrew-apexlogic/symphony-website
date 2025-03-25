@@ -14,9 +14,9 @@
           <div class="parallax-layer z-2" data-depth="0.3">
             <img src="assets/img/landing/saas-2/hero/03.png" alt="Layer" />
           </div>
-          <div class="parallax-layer z-2" data-depth="0.15">
+          <!-- <div class="parallax-layer z-2" data-depth="0.15">
             <img src="assets/img/landing/saas-2/hero/04.png" alt="Layer" />
-          </div>
+          </div> -->
           <div class="parallax-layer z-2" data-depth="0.4">
             <img src="assets/img/landing/saas-2/hero/05.png" alt="Layer" />
           </div>
@@ -48,9 +48,9 @@
     </div>
     <div
       class="row row-cols-3 row-cols-sm-4 row-cols-lg-5 row-cols-xl-6 justify-content-center align-items-center g-4 pt-lg-3 pt-xl-4">
-      @for (item of allBrandName; track $index) {
+      @for (item of allCustomerAgencies; track $index) {
       <div class="col">
-        <img class="d-block my-1 mx-auto" [src]="item.image_src" [width]="item.width" [alt]="item.name" />
+        <img class="d-block my-1 mx-auto"  [src]="item.image_src" [width]="item.width" [alt]="item.name" />
       </div>
       }
     </div>
