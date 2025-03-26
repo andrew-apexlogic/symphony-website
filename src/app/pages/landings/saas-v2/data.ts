@@ -82,7 +82,7 @@ export const benefitsProduct: BenefitProductType[] = [
     card_flip_back: {
       heading: 'Maestro',
       paragraph:
-        'Maestro will soon be released in beta Symphony Maestro exemplifies Symphony’s application of AI.  Maestro will soon be released in beta',
+        'Maestro will soon be released in beta. Symphony Maestro exemplifies Symphony’s application of AI.',
       color: 'bg-info',
       image: 'assets/img/symphony/maestro-icon.png'
     },
