@@ -25,6 +25,7 @@ export type SaasV3TestimonialType = {
   image_src?: string
   name: string
   quote: string
+  quote2?: string;
 }[][]
 
 export type Saa3LayersType = {
@@ -128,8 +129,9 @@ export const saasv3Testimonial: SaasV3TestimonialType = [
       // image_src: 'assets/img/avatar/46.jpg',
       name: 'Program Office Managers',
       quote:
-        'A clear entry point for each program to release their master contract RFP, perform source selection, reduce protests, and make awards.  Upon award, to manage their contract vehicles, review contract operations, and upper management to see the data across all contract vehicles in their agency.',
-    },
+        'Symphony Audition streamlines the process for each program to issue their master contract RFP, conduct source selection, and award contracts.',
+      quote2: 'Symphony Performer manages contract vehicles, fair opportunity solicitation, and provides management dashboards after contract award.'
+      },
   ]
 ]
 

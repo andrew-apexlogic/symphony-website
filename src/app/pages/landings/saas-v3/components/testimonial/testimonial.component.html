@@ -1,70 +1,50 @@
 <section class="container py-5 mt-3 mb-2 my-md-4 my-lg-5">
-  <div
-    class="row justify-content-center align-items-center py-xl-3 my-xxl-3"
-    data-aos="fade-up"
-    data-aos-duration="600"
-    data-aos-offset="280"
-    data-disable-parallax-down="lg"
-  >
-    <div
-      class="col-lg-5 pb-3 pb-lg-0 mb-3 mb-sm-4 mb-lg-0"
-      data-aos="fade-up"
-      data-aos-duration="850"
-      data-aos-offset="150"
-      data-disable-parallax-down="lg"
-    >
+  <div class="row justify-content-center align-items-center py-xl-3 my-xxl-3" data-aos="fade-up" data-aos-duration="600"
+    data-aos-offset="280" data-disable-parallax-down="lg">
+    <div class="col-lg-5 pb-3 pb-lg-0 mb-3 mb-sm-4 mb-lg-0" data-aos="fade-up" data-aos-duration="850"
+      data-aos-offset="150" data-disable-parallax-down="lg">
       <div class="pe-lg-4 pe-xl-0">
-        <h2
-          class="h1 text-center text-lg-start mb-0 mx-auto mx-lg-0"
-          style="max-width: 468px"
-        >
+        <h2 class="h1 text-center text-lg-start mb-0 mx-auto mx-lg-0" style="max-width: 468px">
           Symphony Provides
 
         </h2>
 
-        <div
-          class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4 mt-lg-3"
-        >
-       
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4 mt-lg-3">
+
         </div>
       </div>
     </div>
     <div class="col-sm-10 col-md-8 col-lg-7 pb-2 pb-sm-1 pb-md-0">
       <div class="swiper">
-        <swiper-container
-          init="false"
-          [config]="swiperConfig"
-          class="swiper-wrapper"
-        >
+        <swiper-container init="false" [config]="swiperConfig" class="swiper-wrapper">
           @for (item of avatarsTestimonial; track $index; let odd = $odd) {
-            <swiper-slide class="swiper-slide bg-light">
-              <div class="d-flex flex-column">
-                @for (item of item; track $index; let even = $even) {
-                  <div
-                    class="d-flex align-items-center pb-3 mb-2 mb-md-3 mb-xl-4"
-                    [ngClass]="even ? 'align-self-end' : 'align-self-center'"
-                    style="max-width: 570px"
-                  >
-                   
-                    <div
-                      class="card bg-secondary border-0 rounded-4 py-3 ps-3  pe-2"
-                    >
-                      <div class="card-body py-3 px-2 p-sm-4 ms-4 ms-sm-0">
-                        <div class="h5 fw-bold mb-4">{{ item.name }}</div>
-                        <p class="fs-md">
-                          {{ item.quote }}
-                        </p>
-                   
-                      </div>
-                    </div>
+          <swiper-slide class="swiper-slide bg-light">
+            <div class="d-flex flex-column">
+              @for (item of item; track $index; let even = $even) {
+              <div class="d-flex align-items-center pb-3 mb-2 mb-md-3 mb-xl-4"
+                [ngClass]="even ? 'align-self-end' : 'align-self-center'" style="max-width: 570px">
+
+                <div class="card bg-secondary border-0 rounded-4 py-3 ps-3  pe-2">
+                  <div class="card-body py-3 px-2 p-sm-4 ms-4 ms-sm-0">
+                    <div class="h5 fw-bold mb-4">{{ item.name }}</div>
+                    <p class="fs-md">
+                      {{ item.quote }}
+                    </p>
+
+                    @if (item.quote2){
+                    <p class="fs-md">
+                      {{ item.quote2 }}
+                    </p>
+                    }
                   </div>
-                }
+                </div>
               </div>
-            </swiper-slide>
+              }
+            </div>
+          </swiper-slide>
           }
 
-          s</swiper-container
-        >
+          s</swiper-container>
       </div>
     </div>
   </div>
