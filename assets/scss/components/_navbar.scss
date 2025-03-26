@@ -200,7 +200,7 @@
             top: var(--#{$prefix}dropdown-padding-y);
             bottom: var(--#{$prefix}dropdown-padding-y);
           }
-          margin-top: var(--#{$prefix}dropdown-spacer) !important; // stylelint-disable-line declaration-no-important
+          // margin-top: var(--#{$prefix}dropdown-spacer) !important; // stylelint-disable-line declaration-no-important
           background-color: var(--#{$prefix}dropdown-bg);
           border: var(--#{$prefix}dropdown-border-width) solid var(--#{$prefix}dropdown-border-color);
           @include border-radius(var(--#{$prefix}dropdown-border-radius));
