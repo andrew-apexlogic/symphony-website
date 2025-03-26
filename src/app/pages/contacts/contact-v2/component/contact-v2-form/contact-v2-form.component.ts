@@ -4,7 +4,7 @@ import {
   FormBuilder,
   FormsModule,
   ReactiveFormsModule,
-  UntypedFormGroup,
+  FormGroup,
   Validators,
 } from '@angular/forms'
 import { EmailService } from 'src/app/services/email.service';
@@ -17,68 +17,47 @@ import { EmailService } from 'src/app/services/email.service';
   styles: ``,
 })
 export class ContactV2FormComponent implements OnInit {
-  contactForm!: UntypedFormGroup
-  formGroup!: boolean
-
+  contactForm!: FormGroup;
   isSubmitting = false;
   successMessage = '';
 
   constructor(private fb: FormBuilder, private emailService: EmailService) { }
 
   ngOnInit(): void {
-    this.setupFormValidation()
-
+    // Initialize the form correctly
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
+      email: ['', [Validators.required, Validators.email]], // Fix here
       phone: ['', Validators.required],
       organization: ['', Validators.required],
-    })
-  }
-
-  setupFormValidation(): void {
-    const forms = document.getElementsByClassName('needs-validation')
-
-    for (const form of Array.from(forms)) {
-      form.addEventListener('submit', this.validateForm.bind(this))
-    }
-  }
-
-  validateForm(event: Event): void {
-    const form = event.target as HTMLFormElement
-
-    if (!form.checkValidity()) {
-      event.preventDefault()
-      event.stopPropagation()
-    }
-
-    form.classList.add('was-validated')
+    });
   }
 
   get formControl() {
-    return this.contactForm.controls
+    return this.contactForm.controls;
   }
 
   submitForm() {
-    // this.formGroup = true;
-    console.log("CONTACT FORM 1: ", this.contactForm);
-    if (this.contactForm.valid) {
+    console.log("CONTACT FORM 1: ", this.contactForm.value);
 
-      console.log("CONTACT FORM 2: ", this.contactForm);
+    if (this.contactForm.valid) {
+      console.log("CONTACT FORM 2: ", this.contactForm.value);
 
       this.isSubmitting = true;
       this.emailService.createTicket(this.contactForm.value).subscribe({
         next: () => {
           this.successMessage = 'Your request has been sent to Freshdesk!';
           this.contactForm.reset();
-          this.isSubmitting = false;
+          // this.isSubmitting = false;
         },
         error: (err) => {
           console.error('Error sending request to Freshdesk:', err);
-          this.isSubmitting = false;
+          // this.isSubmitting = false;
         }
       });
-      this.formGroup = false;
+    } else {
+      this.contactForm.markAllAsTouched();
+      console.log('Form is invalid:', this.contactForm);
     }
   }
 }
