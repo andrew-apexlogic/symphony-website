@@ -95,12 +95,12 @@ export const MENU_ITEMS: MenuItemType[] = [
         parentKey: 'about-us',
       },
      
-      // {
-      //   key: 'careers',
-      //   label: 'Careers',
-      //   url: 'careers',
-      //   parentKey: 'about-us',
-      // }
+      {
+        key: 'careers',
+        label: 'Careers',
+        url: 'careers',
+        parentKey: 'about-us',
+      }
     ],
   },
   {

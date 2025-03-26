@@ -44,10 +44,10 @@ export class FooterComponent {
       linkName: 'Technical Specifications',
       path: 'technical-specs'
     },
-    // {
-    //   linkName: 'Privacy Policy',
-    //   path: 'privacy'
-    // }
+    {
+      linkName: 'Careers',
+      path: 'careers'
+    }
   ]
 
   onNavLinkClick(item: FooterLink) {

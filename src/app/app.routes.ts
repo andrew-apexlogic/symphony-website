@@ -14,6 +14,7 @@ import { AgencyComponent } from './pages/about/agency/agency.component'
 import { SymMissionComponent } from './pages/about/mission/mission.component'
 import { MaestroComponent } from './pages/landings/maestro/maestro.component'
 import { SaasV3Component } from './pages/landings/saas-v3/saas-v3.component'
+import { ListComponent } from './pages/blog/list/list.component'
 
 
 export const routes: Routes = [
@@ -34,7 +35,7 @@ export const routes: Routes = [
   },
   {
     path: 'careers',
-    component: SymMissionComponent,
+    component: ListComponent,
     title: 'Careers | Symphony Procurement Suite - Apex Logic',
   },
 

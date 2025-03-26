@@ -4,16 +4,16 @@ import { NavigationBar2Component } from '@components/navigation-bars'
 import { SubscriptionComponent } from './component/subscription/subscription.component'
 import { ListBlogComponent } from './component/list-blog/list-blog.component'
 import { FooterComponent } from './component/footer/footer.component'
+import { FeturesComponent } from '../../landings/saas-v2/components/fetures/fetures.component'
 
 @Component({
   selector: 'app-list',
   standalone: true,
   imports: [
-    NavigationBar2Component,
-    Breadcrumb1Component,
+    // Breadcrumb1Component,
     SubscriptionComponent,
     ListBlogComponent,
-    FooterComponent,
+    FeturesComponent
   ],
   templateUrl: './list.component.html',
   styles: ``,
