@@ -12,7 +12,8 @@ import {
 export type WebStudioServiceType = {
   title: string
   description: string
-  icon: string
+  icon?: string
+  img: string;
   sanitizedIcon?: SafeHtml
 }
 
@@ -51,23 +52,17 @@ export type ContactListType = {
 
 export const webStudioServices: WebStudioServiceType[] = [
   {
-    title: 'Web development',
+    title: 'For Industry',
     description:
-      'Pellentesque bibendum congue massa urna. Tempus hendrerit non molestie nulla enim, est vitae nisl amet.',
-    icon: webDevelopment,
+      'Interact with solicitation documents and the FAR to gain insights.',
+    img: 'assets/img/symphony/product/maestro/ai-icon-1.png',
   },
   {
-    title: 'Mobile development',
+    title: 'For Program',
     description:
-      'Amet, consectetur rhoncus, libero, morbi malesuada feugiat nulla feugiat mi vitae est pharetra nisi velit tincidunt.',
-    icon: mobileDevelopment,
-  },
-  {
-    title: 'Graphic design',
-    description:
-      'Est, nisl, ornare augue maecenas dis vitae tincidunt interdum tincidunt donec ipsum pellentesque luctus justo.',
-    icon: graphicDesign,
-  },
+      "Automatically identify scope reviews that do not comply with the contract vehicle's scope.",
+      img: 'assets/img/symphony/product/maestro/ai-icon-2.png',
+  }
 ]
 
 export const webStudioSkills: WebstudioSkillType[] = [
