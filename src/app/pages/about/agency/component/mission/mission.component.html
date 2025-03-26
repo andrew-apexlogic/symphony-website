@@ -2,25 +2,6 @@
   <div class="container pt-2 pt-sm-4 pt-lg-5 mt-xxl-2">
     <!-- <div class="fs-sm text-uppercase mb-3">Customers</div> -->
     <h2 class="display-6 pb-3 mb-lg-4 text-center pt-2">Our Customers</h2>
-    <div class="swiper">
-      <swiper-container
-        class="swiper-wrapper"
-        [config]="SwiperConfig"
-        init="false"
-      >
-        @for (item of professionalMissionData; track $index) {
-          <swiper-slide class="swiper-slide h-auto">
-            <div class="card border-0 bg-secondary rounded-5 h-100">
-              <div class="card-body">
-                <div [innerHTML]="item.sanitizedIcon"></div>
-                <h3 class="h4">{{ item.title }}</h3>
-                <p class="mb-0">{{ item.content }}</p>
-              </div>
-            </div>
-          </swiper-slide>
-        }
-      </swiper-container>
-
-    </div>
+    <saas-v2-tools />
   </div>
 </section>

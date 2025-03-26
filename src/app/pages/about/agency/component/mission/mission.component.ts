@@ -1,17 +1,17 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core'
-import { SwiperDirective } from '@components/swiper-directive.component'
 import { register } from 'swiper/element'
 import { SwiperOptions } from 'swiper/types'
 import { ProfessionalMissionType, professionalMissionData } from '../../data'
 import { DomSanitizer } from '@angular/platform-browser'
 import { Pagination } from 'swiper/modules'
+import { ToolsComponent } from 'src/app/pages/landings/saas-v2/components/tools/tools.component'
 
 register()
 
 @Component({
   selector: 'agency-about-mission',
   standalone: true,
-  imports: [SwiperDirective],
+  imports: [ ToolsComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './mission.component.html',
   styles: ``,

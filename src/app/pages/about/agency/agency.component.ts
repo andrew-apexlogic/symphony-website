@@ -13,10 +13,10 @@ import { ToolsComponent } from '../../landings/saas-v2/components/tools/tools.co
   imports: [
     // NavigationBarComponent,
     MissionComponent,
-    StepsComponent,
+    // StepsComponent,
     TestimonialComponent,
     RouterModule,
-    ToolsComponent
+    // ToolsComponent
   ],
   templateUrl: './agency.component.html',
   styles: ``,

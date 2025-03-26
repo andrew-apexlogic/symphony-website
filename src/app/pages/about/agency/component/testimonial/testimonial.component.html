@@ -1,51 +1,225 @@
-<section class="pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5">
-  <div class="container pt-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
-    <div class="fs-sm text-uppercase mb-3">Testimonials</div>
-    <h2 class="display-6 pb-3 mb-lg-4">What our clients say</h2>
-    <div class="card border-0 bg-secondary overflow-hidden">
-      <div class="card-body position-relative z-2 px-lg-0 py-lg-5">
-        <div class="row py-2 py-sm-1 py-md-3 py-lg-4 py-xl-5">
-          <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0">
-            <div class="binded-content">
-              @for (item of testimonialSwiperData; track $index) {
-                <div
-                  class="binded-item"
-                  id="{{ item.id }}"
-                  [ngClass]="$index === 0 ? 'active' : ''"
-                >
-                  <img
-                    class="d-block rounded-circle mb-3"
-                    [src]="item.imageSrc"
-                    width="86"
-                    alt="Lilianna Bocouse"
-                  />
-                  <h4 class="mb-0">{{ item.name }}</h4>
-                  <p class="fs-lg text-body-secondary mb-0">{{ item.role }}</p>
+<section class="  bg-secondary pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5">
+  <div class=" container pt-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
+    <!-- <div class="fs-sm text-uppercase mb-3">Testimonials</div> -->
+    <div class="  order-md-1 pt-xl-2" data-aos="fade-up" data-aos-duration="850" data-aos-offset="200"
+      data-disable-parallax-down="md">
+      <div class="pe-md-3 pe-xl-0">
+        <!-- <span
+        class="badge bg-primary bg-opacity-10 text-primary fs-sm mb-3 mb-lg-4"
+        >Team activities</span
+      > -->
+        <img src="assets/img/symphony/customers/sbcx-logo-dark.png" alt="SBCX Logo" width="250px" />
+        <p class="mt-5 mb-5">
+          Apex Logic has worked with the HHS OSDBU office for over 7 years. Starting with the design and development of
+          their enterprise system - the Small Business Customer Experience (SBCX). SBCX contains all the features and
+          tools the OSDBU needs to run its efforts in a collaborative environment with ordering activities throughout
+          HHS, SBA, and industry. The feature set includes Small Business Review and Approval workflows, Opportunity
+          Forecasts, Subcontracting Review workflows, and small business outreach features. The jewel of SBCX is its
+          small business directory containing detailed information and capabilities of over 8000 small businesses
+          including up to date SAM and USA Spending data. Apex Logic continues to maintain and operate SBCX while
+          continuing to add new features. Apex Logic is proud of the work we are doing to support small businesses and
+          those responsible for supporting them.
+        </p>
+
+
+        <div class="card-body position-relative z-2 px-lg-0 py-lg-5">
+          <div class="row py-2 py-sm-1 py-md-3 py-lg-4 py-xl-5">
+            <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0">
+              <div class="binded-content">
+
+
+                <img class="d-block rounded-circle mb-3" src="assets/img/symphony/customers/hhs-logo.svg" width="66"
+                  alt="Lilianna Bocouse" />
+                <h4 class="mb-0">Joshua Blow</h4>
+                <p class="fs-lg text-body-secondary mb-0"> Director, OSDBU, HHS</p>
+
+
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-7">
+              <div class="swiper" #testimonialSwipers>
+                <div class="swiper-wrapper" init="false">
+
+
+                  <p class="text-body mb-0"> “ Apex consistently exceeds contract deliverables on a monthly basis.
+                    Not only are reporting and invoicing executed punctually, but the system remains accessible to users
+                    without interruption. Going beyond the baseline requirements, Apex proactively addresses user
+                    concerns, offers robust technical support for OCIO reporting, and ensures the system's continuous
+                    optimization for an exceptional user
+                    experience, all without prompting from the government. This commitment to excellence underscores
+                    Apex's dedication to serving its users and fulfilling its contractual obligations at the highest
+                    standard. Apex demonstrated initiative by developing a reporting section within the portal, enabling
+                    the government to track action items seamlessly throughout the procurement lifecycle. This proactive
+                    enhancement significantly streamlines processes for the government, enhancing efficiency and
+                    transparency. Notably, Apex implemented this feature without any specific request from the
+                    government, showcasing a commitment to anticipating and addressing their needs preemptively. This
+                    proactive approach underscores Apex's dedication to providing value-added solutions that exceed
+                    expectations and contribute to the government's success. ”</p>
+
+
                 </div>
-              }
+              </div>
             </div>
           </div>
-          <div class="col-md-8 col-lg-7">
-            <div class="swiper" #testimonialSwipers>
-              <div class="swiper-wrapper" init="false">
-                @for (item of swiperContent; track $index) {
-                  <div
-                    class="swiper-slide"
-                    attr.data-swiper-binded="{{ item.bindedTo }}"
-                  >
-                    <p class="text-dark lead mb-0">{{ item.content }}</p>
-                  </div>
-                }
+        </div>
+
+
+        <div class="card-body position-relative z-2 px-lg-0 py-lg-5">
+          <div class="row py-2 py-sm-1 py-md-3 py-lg-4 py-xl-5">
+            <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0">
+              <div class="binded-content">
+
+
+                <img class="d-block rounded-circle mb-3" src="assets/img/symphony/customers/hhs-logo.svg" width="66"
+                  alt="Lilianna Bocouse" />
+                <h4 class="mb-0">Christopher Poulos</h4>
+                <p class="fs-lg text-body-secondary mb-0"> Contract Specialist, HHS</p>
+
+
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-7">
+              <div class="swiper" #testimonialSwipers>
+                <div class="swiper-wrapper" init="false">
+
+
+                  <p class="text-body mb-0"> “
+                    With nearly two decades of experience in Federal Acquisitions and contract management, I can
+                    confidently affirm that managing this contract with Apex has been remarkably smooth and
+                    straightforward. This ease of management can be attributed primarily to Apex's exceptional
+                    professionalism, competency, and management approach. Their unwavering commitment to excellence and
+                    their adept handling of all aspects of the contract have significantly alleviated the complexities
+                    typically associated with government IT contracts of such Importance to the Department. I commend
+                    Apex for their exemplary performance, which has undoubtedly contributed to the overall success of
+                    this contract.
+                    ”</p>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+   
+  </div>
+</section>
+
+<div class="d-flex w-100 justify-content-center overflow-hidden" style="color: var(--ar-gray-100);"><svg
+  class="flex-shrink-0" width="3000" height="18" xmlns="http://www.w3.org/2000/svg">
+  <polygon fill="currentColor"
+    points="3000,0 3000,12.3 2751,7.2 2460,18 2239,7.2 2017,10.7 1911.5,7.2 1368,18 831,7.2 540,18 319,7.2 97,10.7 0,7.5 0,0 ">
+  </polygon>
+</svg></div>
+
+<section class=" pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5">
+  <div class=" container pt-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
+    <!-- <div class="fs-sm text-uppercase mb-3">Testimonials</div> -->
+    <div class="  order-md-1 pt-xl-2" data-aos="fade-up" data-aos-duration="850" data-aos-offset="200"
+      data-disable-parallax-down="md">
+      <div class="pe-md-3 pe-xl-0">
+        <img src="assets/img/symphony/customers/nitaac-logo.png" alt="NITAAC Logo" width="250px" />
+        <p class="mt-5 mb-5">
+          Symphony V1 is eGOS. NIH has been using Symphony to manage its suite of contract vehicles for NITAAC for over 15
+          years. Using Symphony, NITAAC increased its throughput from $250M per year to $1.8B.
+        </p>
+  
+        <div class="card-body position-relative z-2 px-lg-0 py-lg-5">
+          <div class="row py-2 py-sm-1 py-md-3 py-lg-4 py-xl-5">
+            <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0">
+              <div class="binded-content">
+  
+  
+                <img class="d-block rounded-circle mb-3" src="assets/img/symphony/customers/nih-logo.png" width="110"
+                  alt="Lilianna Bocouse" />
+                <h4 class="mb-0">Sharmaine Fagankerr</h4>
+                <p class="fs-lg text-body-secondary mb-0"> Contracting Officer, NIH/OD/OLAO</p>
+  
+  
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-7">
+              <div class="swiper" #testimonialSwipers>
+                <div class="swiper-wrapper" init="false">
+  
+  
+                  <p class="text-body mb-0"> “ The efforts provided by Apex Logic were critical to the successful
+                    execution of the ASTRO IDIQ contract and administration module development. The Symphony portal
+                    provided offerors a streamlined and simple solicitation submission process. Apex Logic has integrated
+                    lessons learned from previous solicitations and provided the ASTRO team with a superior product that
+                    is both innovative and agile. ”</p>
+  
+  
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div
-      class="swiper-pagination position-relative bottom-0 pt-4 mt-2 mt-md-3"
-      id="testimonials-bullets"
-    ></div>
+    
   </div>
 </section>
+
+
+<section class="  bg-secondary pt-5 mt-1 mt-sm-2 mt-xl-4 mt-xxl-5">
+  <div class=" container pt-3 pt-md-4 pt-lg-5 mt-xl-2 mt-xxl-3">
+    <!-- <div class="fs-sm text-uppercase mb-3">Testimonials</div> -->
+    <div class="  order-md-1 pt-xl-2" data-aos="fade-up" data-aos-duration="850" data-aos-offset="200"
+      data-disable-parallax-down="md">
+      <div class="pe-md-3 pe-xl-0">
+        <img src="assets/img/symphony/customers/astro-logo.png" alt="ASTRO Logo" width="250px" />
+
+        <div class="card-body position-relative z-2 px-lg-0 py-lg-5">
+          <div class="row py-2 py-sm-1 py-md-3 py-lg-4 py-xl-5">
+            <div class="col-md-4 col-lg-3 offset-lg-1 mb-3 mb-md-0">
+              <div class="binded-content">
+
+
+                <img class="d-block rounded-circle mb-3" src="assets/img/symphony/customers/gsa-logo-color.png"
+                  width="110" alt="Lilianna Bocouse" />
+                <h4 class="mb-0">Valerie Bindel</h4>
+                <p class="fs-lg text-body-secondary mb-0"> Contracting Officer, GSA</p>
+
+
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-7">
+              <div class="swiper" #testimonialSwipers>
+                <div class="swiper-wrapper" init="false">
+
+
+                  <p class="text-body mb-0"> “ The efforts provided by Apex Logic were critical to the successful
+                    execution of the ASTRO IDIQ contract and administration module development. The Symphony portal
+                    provided offerors a streamlined and simple solicitation submission process. Apex Logic has
+                    integrated
+                    lessons learned from previous solicitations and provided the ASTRO team with a superior product that
+                    is both innovative and agile. ”</p>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<div class="d-flex w-100 justify-content-center overflow-hidden" style="color: var(--ar-gray-100);"><svg
+  class="flex-shrink-0" width="3000" height="18" xmlns="http://www.w3.org/2000/svg">
+  <polygon fill="currentColor"
+    points="3000,0 3000,12.3 2751,7.2 2460,18 2239,7.2 2017,10.7 1911.5,7.2 1368,18 831,7.2 540,18 319,7.2 97,10.7 0,7.5 0,0 ">
+  </polygon>
+</svg></div>
+
+
