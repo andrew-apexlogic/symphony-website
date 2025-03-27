@@ -38,7 +38,7 @@ export const testimonials: TestimonialType[] = [
   },
   {
     quote:
-  "Apex Logic demonstrated great flexibility in working with GSA to add functionality to the so ware/platform. As different scenarios were presented, Apex Logic worked around the Government schedule and provided timely updates. This allowed government evaluators to have access to the platform within the expected timeframes. Apex always met or exceeded their required timeframes.",
+      "Apex Logic demonstrated great flexibility in working with GSA to add functionality to the so ware/platform. As different scenarios were presented, Apex Logic worked around the Government schedule and provided timely updates. This allowed government evaluators to have access to the platform within the expected timeframes. Apex always met or exceeded their required timeframes.",
     author: {
       name: 'Michael, CS',
       role: 'GSA',
@@ -47,11 +47,11 @@ export const testimonials: TestimonialType[] = [
   },
   {
     quote:
-"Apex Logic has provided outstanding IT support to NITAAC throughout this contracts performance. They have met all major development deliverables, provide excellent onsite customer support, manage all financials and labor hours in accordance with the contracts terms and conditions, and routinely exceed expectations.",
+      "With nearly two decades of experience in Federal Acquisitions and contract management, I can confidently affirm that managing this contract with Apex has  been remarkably smooth and straightforward. This ease of management can be  attributed primarily to Apex's exceptional professionalism, competency, and management approach.  Their unwavering commitment to excellence and their adept handling of all aspects of the contract have significantly alleviated the complexities typically associated with government IT contracts of such Importance to the Department. I commend Apex for their exemplary performance, which has undoubtedly contributed to the overall success of this contract.",
     author: {
-      name: 'Sharmaine, CO',
-      role: 'NIH',
-      avatar: 'assets/img/symphony/customers/nih-logo.png',
+      name: 'Christopher Poulos, Contract Specialist',
+      role: 'HHS',
+      avatar: 'assets/img/symphony/customers/hhs-logo.png',
     },
   },
 ]
