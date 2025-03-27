@@ -88,7 +88,7 @@ export const saas3feature: Saas3FeatureType[] = [
   {
     title: 'Program Management',
     description:
-      'Symphony streamlines contract administration by centralizing key information, activities, and communication. Symphony workflows deliver a consistent, fair, and positive experience for the Industry while providing program management for government agencies.  Symphony efficiently manages all contract vehicles within a single system, allowing vendors to enter pertinent data once for use throughout the review and approval process across all contracts.',
+      'Symphony streamlines contract administration by centralizing key information, activities, and communication. Symphony workflows deliver a consistent, fair, and positive experience for the industry while providing program management for government agencies.  Symphony efficiently manages all contract vehicles within a single system, allowing vendors to enter pertinent data once for use throughout the review and approval process across all contracts.',
     svg: comment,
   },
   {
@@ -106,7 +106,7 @@ export const saas3feature: Saas3FeatureType[] = [
   {
     title: 'AI',
     description:
-      'Apex Logic has adopted a thoughtful approach, taking the time to identify best practices emerging from the rapid evolution of AI technologies. Our AI-powered contract management system are designed to reduce manual effort, minimize errors, improve compliance, and provide deeper insights into contractual relationships and obligations.',
+      'Apex Logic is soon releasing a beta version of the Maestro module, our AI-powered contract management system. We have taken a deliberate approach to development, allowing time to identify best practices in the rapidly changing landscape of AI technologies. The Maestro module is designed to streamline contract management by reducing manual tasks, minimizing errors, improving compliance, and offering valuable insights into contractual relationships and obligations.',
     svg: notification,
   }
 ]

@@ -7,6 +7,7 @@ import { MobileAppComponent } from './components/mobile-app/mobile-app.component
 import { PricingComponent } from './components/pricing/pricing.component'
 import { ToolsComponent } from './components/tools/tools.component'
 import { CtaComponent } from './components/cta/cta.component'
+import { SubscribeComponent } from '../home/component/subscribe/subscribe.component'
 
 @Component({
   selector: 'landings-saas-v3',
@@ -16,6 +17,7 @@ import { CtaComponent } from './components/cta/cta.component'
     FeturesComponent,
     EdgeComponent,
     TestimonialComponent,
+    SubscribeComponent
   ],
   templateUrl: './saas-v3.component.html',
 })

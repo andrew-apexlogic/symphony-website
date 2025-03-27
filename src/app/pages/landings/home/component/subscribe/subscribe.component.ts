@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
 import { initAOS } from 'src/app/utils/init-aos'
 
 @Component({
@@ -9,6 +10,8 @@ import { initAOS } from 'src/app/utils/init-aos'
   styles: ``,
 })
 export class SubscribeComponent implements AfterViewInit {
+  constructor(private router: Router) {}
+
   isSending = false
   ngAfterViewInit(): void {
     initAOS()
@@ -17,4 +20,11 @@ export class SubscribeComponent implements AfterViewInit {
   subscribe() {
     this.isSending = true
   }
+
+  onLearnMoreMaestro(){
+    this.router.navigate(['maestro-overview']);
+  }
+
 }
+
+

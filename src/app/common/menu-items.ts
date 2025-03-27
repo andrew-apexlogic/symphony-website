@@ -23,6 +23,13 @@ export const MENU_ITEMS: MenuItemType[] = [
     target: '_self',
     children: [
       {
+        key: 'symphony-framework',
+        label: 'Symphony Framework',
+        url: 'symphony-overview',
+        parentKey: 'symphony',
+        image: 'assets/img/megamenu/audition-landing.jpg',
+      },
+      {
         key: 'audition',
         label: 'Audition',
         url: 'audition-overview',

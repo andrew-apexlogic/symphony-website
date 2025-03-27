@@ -57,52 +57,18 @@
     </div>
     <div
       class="position-relative z-3 text-center py-5 my-xl-3 mx-auto"
-      style="max-width: 565px"
       data-bs-theme="dark"
+      style="max-width: 565px"
     >
-      <h2 class="display-5">Subscribe to Newsletter</h2>
+      <h1 >  <img style="position: relative; top: -1px;"  class="pb-2" src="assets/img/symphony/maestro-full-white.png" alt="Maestro Logo" width="245px"> Coming Soon</h1>
       <p class="text-body fs-lg pb-3 mb-3 mb-lg-4">
-        Subscribe to our newsletter to receive early discount offers, new
-        templates info and updates.
+        Maestro will soon be released in beta. Symphony Maestro exemplifies Symphony’s application of AI.
       </p>
-      <form
-        class="subscription-form validate mx-auto"
-        action="javascript:void(0);"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        novalidate
-        style="max-width: 500px"
-      >
-        <div class="input-group">
-          <span class="input-group-text"><i class="ai-mail"></i></span>
-          <input
-            class="form-control"
-            type="email"
-            name="EMAIL"
-            placeholder="Enter your email"
-            required
-            id="subscr-email"
-          />
-          <button
-            class="btn btn-primary"
-            type="submit"
-            name="subscribe"
-            (click)="subscribe()"
-          >
-            {{ isSending ? 'Sending...' : 'Subscribe*' }}
-          </button>
-        </div>
+      
+     
 
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input
-            class="subscription-form-antispam"
-            type="text"
-            name="b_c7103e2c981361a6639545bd5_29ca296126"
-            tabindex="-1"
-          />
-        </div>
-        <div class="subscription-status mx-auto"></div>
-      </form>
+      <button class="btn btn-secondary" (click)="onLearnMoreMaestro()">Learn More > </button>
+
     </div>
   </div>
 </section>
