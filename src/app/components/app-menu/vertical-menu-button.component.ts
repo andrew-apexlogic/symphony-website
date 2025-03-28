@@ -11,7 +11,7 @@ import { LogoBoxComponent } from '@components/logo-box/logo-box.component'
   template: `
     <ng-template #offcanvasContent let-offcanvas>
       <div class="offcanvas-header border-bottom">
-        <component-logo-box />
+        <component-logo-box [lightMode]="true"/>
 
         <button
           (click)="offcanvasService.dismiss()"

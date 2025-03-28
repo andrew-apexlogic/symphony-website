@@ -1,3 +1,8 @@
 <a class="navbar-brand {{ className }}" routerLink="/">
-  <img src="assets/img/symphony/symphony-logo.png" width="160px" alt="Symphony Logo">
+  @if (lightMode) {
+    <img src="assets/img/symphony/symphony-logo-dark.png" width="160px" alt="Symphony Logo">
+  }
+  @else {
+    <img src="assets/img/symphony/symphony-logo.png" width="160px" alt="Symphony Logo">
+  }
 </a>

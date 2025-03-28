@@ -11,4 +11,5 @@ import { RouterModule } from '@angular/router'
 // Use LogoBoxComponent to replace Around's logo with your own Branding Logo in whole App
 export class LogoBoxComponent {
   @Input() className?: string
+  @Input() lightMode: boolean = false;
 }
