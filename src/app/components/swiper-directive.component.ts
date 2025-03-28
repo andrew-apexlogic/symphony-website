@@ -5,20 +5,21 @@ import type { SwiperOptions } from 'swiper/types/swiper-options'
   selector: 'swiper-container',
   standalone: true,
 })
-export class SwiperDirective implements AfterViewInit {
-  private readonly swiperElement: HTMLElement
+export class SwiperDirective {
+// export class SwiperDirective implements AfterViewInit {
+  // private readonly swiperElement: HTMLElement
 
   @Input('config') config?: SwiperOptions
 
-  constructor(
-    private el: ElementRef<HTMLElement & { initialize: () => void }>
-  ) {
-    this.swiperElement = el.nativeElement
-  }
-
-  ngAfterViewInit() {
-    Object.assign(this.el.nativeElement, this.config)
-
-    this.el.nativeElement.initialize()
-  }
+//   constructor(
+//     private el: ElementRef<HTMLElement & { initialize: () => void }>
+//   ) {
+//     this.swiperElement = el.nativeElement
+//   }
+//
+//   ngAfterViewInit() {
+//     Object.assign(this.el.nativeElement, this.config)
+//
+//     this.el.nativeElement.initialize()
+//   }
 }

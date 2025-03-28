@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { findAllParent, findMenuItem, getMenuItemFromURL } from '@helpers/menu'
 import type { MenuItemType } from 'src/app/common/menu-items'
 import { VerticalMenuItemWithChildrenComponent } from './components/vertical-menu-item-with-children.component'
@@ -13,6 +13,7 @@ import { basePath } from 'src/app/states/constants'
 })
 export class VerticalAppMenuComponent {
   @Input() menuItems!: MenuItemType[]
+  @Output() closeMenu = new EventEmitter();
 
   activeMenuItems?: string[]
   trimmedURL = location?.pathname?.replaceAll(
@@ -40,5 +41,9 @@ export class VerticalAppMenuComponent {
 
   getActiveClass(item: MenuItemType) {
     // return this.activeMenuItems?.includes(item.key) ? ' show' : ''
+  }
+
+  onLinkClick() {
+    this.closeMenu.emit();
   }
 }

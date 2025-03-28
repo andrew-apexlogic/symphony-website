@@ -1,11 +1,10 @@
-import { Component, Input } from '@angular/core'
-import { RouterLink } from '@angular/router'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Router } from '@angular/router'
 import type { MenuItemType } from 'src/app/common/menu-items'
 
 @Component({
   selector: 'vertical-menu-item',
   standalone: true,
-  imports: [RouterLink],
   styles: `
     :host(vertical-menu-item) {
       display: contents;
@@ -13,18 +12,28 @@ import type { MenuItemType } from 'src/app/common/menu-items'
   `,
   template: `
     <li [class]="itemClassName">
-      <a
-        [routerLink]="item.url ?? ''"
-        [target]="item.target ?? '_self'"
-        [class]="linkClassName"
-      >
+      <button
+        [class]="linkClassName + ' collapse-item'"
+        (click)="onNavLinkClick(item)">
         {{ item.label }}
-      </a>
+      </button>
     </li>
   `,
 })
 export class VerticalMenuItemComponent {
-  @Input() item!: MenuItemType
-  @Input() linkClassName?: string
-  @Input() itemClassName?: string
+  @Input() item!: MenuItemType;
+  @Input() linkClassName?: string;
+  @Input() itemClassName?: string;
+  @Output() closeMenu = new EventEmitter();
+
+  constructor(private router: Router) {}
+
+  onNavLinkClick(item: MenuItemType) {
+    if (item.url?.includes('https://')){
+      window.open(item.url, "_blank");
+    } else {
+      this.router.navigate(['/' + item.url]);
+    }
+    this.closeMenu.emit();
+  }
 }

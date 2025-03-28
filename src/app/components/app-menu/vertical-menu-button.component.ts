@@ -23,7 +23,7 @@ import { LogoBoxComponent } from '@components/logo-box/logo-box.component'
       </div>
 
       <div class="offcanvas-body">
-        <vertical-app-menu [menuItems]="menuItems"></vertical-app-menu>
+        <vertical-app-menu [menuItems]="menuItems" (closeMenu)="offcanvasService.dismiss()"></vertical-app-menu>
       </div>
     </ng-template>
 

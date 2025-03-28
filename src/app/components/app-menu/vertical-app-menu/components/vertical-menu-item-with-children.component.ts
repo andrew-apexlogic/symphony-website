@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common'
-import { Component, Input } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap'
 import type { MenuItemType } from 'src/app/common/menu-items'
 import { VerticalMenuItemComponent } from './vertical-menu-item.component'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'vertical-menu-item-with-children',
@@ -15,7 +16,18 @@ import { VerticalMenuItemComponent } from './vertical-menu-item.component'
   `,
   template: `
     <li [class]="itemClassName">
-      <a
+      <button
+        [class]="linkClassName + ' collapse-item'"
+        data-bs-toggle="collapse"
+        role="button"
+        aria-haspopup="true"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="onParentLinkClicked(item)"
+      >
+        {{ item.label }}
+        <i class="dropdown-toggle ms-auto"></i>
+      </button>
+      <!-- <a
         [class]="linkClassName + ' collapse-item'"
         data-bs-toggle="collapse"
         role="button"
@@ -27,7 +39,7 @@ import { VerticalMenuItemComponent } from './vertical-menu-item.component'
       >
         {{ item.label }}
         <i class="dropdown-toggle ms-auto"></i>
-      </a>
+      </a> -->
 
       <div
         [(ngbCollapse)]="isCollapsed"
@@ -45,6 +57,7 @@ import { VerticalMenuItemComponent } from './vertical-menu-item.component'
               />
             } @else {
               <vertical-menu-item
+                (closeMenu)="onChildLinkClick()"
                 [item]="child"
                 [itemClassName]="'nav-item px-3 pt-1'"
                 [linkClassName]="'nav-link px-0 pt-1' + getActiveClass(child)"
@@ -61,12 +74,23 @@ export class VerticalMenuItemWithChildrenComponent {
   @Input() activeMenuItems?: string[]
   @Input() itemClassName?: string
   @Input() linkClassName?: string
+  @Output() closeMenu = new EventEmitter();
 
   isCollapsed = true
+
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
   getActiveClass(item: MenuItemType) {
     // return this.activeMenuItems?.includes(item.key) ? ' show' : ''
+  }
+
+  onParentLinkClicked(item: MenuItemType) {
+    this.isCollapsed = !this.isCollapsed;
+  }
+
+  onChildLinkClick() {
+    this.closeMenu.emit();
   }
 }

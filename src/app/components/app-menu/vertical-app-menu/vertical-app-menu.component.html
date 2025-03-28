@@ -6,12 +6,14 @@
         [activeMenuItems]="this.activeMenuItems"
         [itemClassName]="'nav-item px-0'"
         [linkClassName]="'nav-link px-0' + getActiveClass(item)"
+        (closeMenu)="onLinkClick()"
       />
     } @else {
       <vertical-menu-item
         [item]="item"
         [itemClassName]="'nav-item ps-0'"
         [linkClassName]="'nav-link ps-0' + getActiveClass(item)"
+        (closeMenu)="onLinkClick()"
       />
     }
   }
