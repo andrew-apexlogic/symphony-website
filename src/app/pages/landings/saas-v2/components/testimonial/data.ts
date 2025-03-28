@@ -49,7 +49,7 @@ export const testimonials: TestimonialType[] = [
     quote:
       "With nearly two decades of experience in Federal Acquisitions and contract management, I can confidently affirm that managing this contract with Apex has  been remarkably smooth and straightforward. This ease of management can be  attributed primarily to Apex's exceptional professionalism, competency, and management approach.  Their unwavering commitment to excellence and their adept handling of all aspects of the contract have significantly alleviated the complexities typically associated with government IT contracts of such Importance to the Department. I commend Apex for their exemplary performance, which has undoubtedly contributed to the overall success of this contract.",
     author: {
-      name: 'Christopher Poulos, Contract Specialist',
+      name: 'Christopher P, Contract Officer',
       role: 'HHS',
       avatar: 'assets/img/symphony/customers/hhs-logo.png',
     },
